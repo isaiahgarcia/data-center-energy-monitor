@@ -11,7 +11,7 @@ const lato = Lato({
 
 const Footer = () => {
     return (
-        <div className="bg-footer h-[150px]">
+        <div className="bg-footer text-white h-[150px]">
             <div className="flex flex-row">
                 <div className="basis-5/6 flex flex-row items-start justify-between pt-2 pl-2 pb-2 pr-20">
                     <h1 className={`${lato.className} text-2xl`}>DATA CENTER ENERGY MONITOR</h1>

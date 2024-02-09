@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Header = () => {
     return (
-        <div className={`${inter.className} bg-primary h-[70px]`}>
+        <div className={`${inter.className} bg-header text-white h-[70px]`}>
             <div className="flex flex-row justify-between">
                 <div className="flex flex-row items-center space-x-5">
                     <Image

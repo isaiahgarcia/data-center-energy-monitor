@@ -5,7 +5,7 @@ export default function Home() {
     <div className="w-full h-full bg-white">
       <div className="bg-[url('/images/background-image.jpeg')] h-[500px] bg-no-repeat bg-center bg-cover flex items-center justify-center">
         <div className="flex flex-col space-y-20 items-center justify-center">
-          <p className="text-6xl text-balance text-center">
+          <p className="text-6xl text-white text-balance text-center">
             Increasing transparency on data center energy usage
           </p>
           <button className="w-[200px] bg-white rounded-md text-black p-3">
@@ -32,7 +32,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full flex flex-col">
-            <div className="bg-primary p-3 rounded-md">
+            <div className="bg-header p-3 rounded-md">
               <h1 className="text-xl text-white">
                 Research Papers
               </h1>

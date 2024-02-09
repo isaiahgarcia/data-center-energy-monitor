@@ -47,7 +47,7 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-primary w-1/2 rounded-3xl p-10">
+                <div className="bg-header w-1/2 rounded-3xl p-10">
                     <p>Form</p>
                 </div>
             </div>
