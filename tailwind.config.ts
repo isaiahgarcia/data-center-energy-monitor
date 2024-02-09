@@ -21,6 +21,7 @@ const config = {
       colors: {
         header: "#064374",
         footer: "#043A64",
+        minor: "#469CDA",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,5 +1,6 @@
 import { Lato, Lora } from "next/font/google";
 import Image from "next/image";
+import { ContactForm } from "./components/contact-form";
 
 const lato = Lato({
     weight: "400",
@@ -48,7 +49,7 @@ const ContactPage = () => {
                     </div>
                 </div>
                 <div className="bg-header w-1/2 rounded-3xl p-10">
-                    <p>Form</p>
+                    <ContactForm />
                 </div>
             </div>
         </div>

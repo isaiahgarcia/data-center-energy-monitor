@@ -2,6 +2,8 @@
 
 import { Inter, Lato } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({
@@ -9,7 +11,12 @@ const lato = Lato({
     subsets: ["latin"]
 });
 
+const ACTIVE_ROUTE = "underline underline-offset-2";
+const INACTIVE_ROUTE = "";
+
 const Footer = () => {
+    const pathname = usePathname();
+
     return (
         <div className="bg-footer text-white h-[150px]">
             <div className="flex flex-row">
@@ -30,7 +37,9 @@ const Footer = () => {
                             <h1>Background</h1>
                             <div className="font-extralight text-sm">
                                 <p>Methods</p>
-                                <p>Contact</p>
+                                <Link href="/contact">
+                                    <p className={pathname === "/contact" ? ACTIVE_ROUTE : INACTIVE_ROUTE}>Contact</p>
+                                </Link>
                                 <p>ISA Lab</p>
                             </div>
                         </div>
