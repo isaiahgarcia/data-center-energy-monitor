@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="w-full h-full bg-white">
       <div className="bg-[url('/images/background-image.jpeg')] h-[500px] bg-no-repeat bg-center bg-cover flex items-center justify-center">
@@ -8,11 +12,12 @@ export default function Home() {
           <p className="text-6xl text-white text-balance text-center">
             Increasing transparency on data center energy usage
           </p>
-          <button className="w-[200px] bg-white rounded-md text-black p-3">
-            <p className="text-sm">
-              Explore Industry Trends
-            </p>
-          </button>
+          <Button 
+            className="w-[200px] hover:bg-white bg-white rounded-md text-black p-3"
+            onClick={() => router.push("/explore")}
+          >
+            Explore Industry Trends
+          </Button>
         </div>
       </div>
       <div className="flex items-center justify-center text-black">
